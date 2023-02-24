@@ -8,6 +8,11 @@ import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/header/navbar/navbar.component';
 import { LogoComponent } from './components/header/logo/logo.component';
 import { BannerComponent } from './components/header/banner/banner.component';
+import { BodyComponent } from './components/body/body.component';
+import { EspecializacionComponent } from './components/body/especializacion/especializacion.component';
+import { AbogadosComponent } from './components/body/abogados/abogados.component';
+import { UbicacionComponent } from './components/body/ubicacion/ubicacion.component';
+import { ContactoComponent } from './components/body/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { BannerComponent } from './components/header/banner/banner.component';
     AboutComponent,
     NavbarComponent,
     LogoComponent,
-    BannerComponent
+    BannerComponent,
+    BodyComponent,
+    EspecializacionComponent,
+    AbogadosComponent,
+    UbicacionComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule

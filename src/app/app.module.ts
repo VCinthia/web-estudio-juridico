@@ -13,6 +13,9 @@ import { EspecializacionComponent } from './components/body/especializacion/espe
 import { AbogadosComponent } from './components/body/abogados/abogados.component';
 import { UbicacionComponent } from './components/body/ubicacion/ubicacion.component';
 import { ContactoComponent } from './components/body/contacto/contacto.component';
+import { WebComponent } from './components/web/web.component';
+import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,10 +30,14 @@ import { ContactoComponent } from './components/body/contacto/contacto.component
     EspecializacionComponent,
     AbogadosComponent,
     UbicacionComponent,
-    ContactoComponent
+    ContactoComponent,
+    WebComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,    
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

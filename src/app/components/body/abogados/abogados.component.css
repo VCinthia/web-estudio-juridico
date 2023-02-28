@@ -1,0 +1,6 @@
+.list-inline li{
+    justify-content:baseline ;
+    display:inline-block;
+    align-items:center;
+    margin: 20px;
+}

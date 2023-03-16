@@ -77,108 +77,22 @@
                             <p>En nuestro estudio contamos con un equipo de abogados especializados en diferentes áreas
                                 del derecho, tales como mediación, civil y comercial, laboral, penal, familia, entre
                                 otros.</p>
-                            <ul class="list-inline">
-                                <!-- ALE -->
+                            <ul class="list-inline" *ngFor="let abogado of abogados">
+                                <!--DESDE JSON-->
                                 <li portfolio-item>
-                                    <h5><strong>Dra. Marcela Alejandra Errasti<br></strong></h5>
-                                    <strong>Abogada Mediadora<br>Mat. Prov. C.A.M.d.P. T°XIV F°43 <br>Mat. Fed.
-                                        C.F.A.M.d.P. T°701 F°732<br>
-                                        Mat. Med. Prov. MP220</strong><br>
-                                    Mediación | Laboral | Sucesiones | Familia | Civ. y Com.<br>Especialidad Secretaría
-                                    de Agricultura, Ganadería y Pesca.<br>
-                                    Asesoramiento en liquidación sueldos personal embarcado <br>(SOMU - SIMAPE -
-                                    Capitanes - SICONARA - SAON)<br>
-                                    <a href="mailto:marcela.errasti@yahoo.com.ar?Subject=Recibiste%20un%20mail%20desde%20Estudio%20Web">marcela.errasti@yahoo.com.ar</a><br>
-                                    <a href="https://api.whatsapp.com//send?phone=5492235352494" target="_blank">
+                                    <h5><strong>{{abogado.nombre}}</strong></h5>
+                                        <p class="profesionales__p"><strong>{{abogado.profesion}}</strong></p>
+                                        <p class="profesionales__p"><strong>{{abogado.matricula1}}</strong></p>
+                                        <p class="profesionales__p"><strong>{{abogado.matricula2}}</strong></p>
+                                        <p class="profesionales__p"><strong>{{abogado.matricula3}}</strong></p>
+                                        <p>
+                                            {{abogado.descripcion}}<br>{{abogado.especialidad}}<br>
+                                        </p>
+                                    <a
+                                        href="mailto:{{abogado.mail}}?Subject=Email%20desde%20Estudio%20Web">{{abogado.mail}}</a><br>
+                                    <a href="https://api.whatsapp.com//send?phone={{abogado.cel}}" target="_blank">
                                         <i class="fab fa-whatsapp"></i>
                                     </a>
-                                    
-                                </li>
-
-                                <!--VARANINI-->
-                                <li portfolio-item>
-                                    <h5><strong>Dr. Christian Damian Varanini<br></strong></h5>
-                                    <strong>Abogado<br>Mat. Prov. C.A.M.d.P. T°AAA F°00</strong><br>
-                                    Laboral | Sucesiones | Familia | Civ. y Com.<br>
-                                    <a href="mailto:christianvaranini@hotmail.com?Subject=Recibiste%20un%20mail%20desde%20Estudio%20Web">christianvaranini@hotmail.com</a><br>
-                                    <a href="https://api.whatsapp.com//send?phone=5492235462905" target="_blank">
-                                        <i class="fab fa-whatsapp"></i>
-                                    </a>
-                                    
-                                </li>
-
-
-                                <li portfolio-item>
-                                    <strong>Dr. Christian Damian Varanini<br>
-                                        Abogado<br>Mat. Prov. C.A.M.d.P. 000000</strong><br>
-                                    Laboral | Sucesiones | Familia | Civ. y Com.<br>
-                                    email@email.com<br>
-                                    <a href="https://api.whatsapp.com//send?phone=5492235462905"
-                                        target="_blank">Contactar<i
-                                            class="bi bi-whatsapp"></i></a><br><!--ver mostrar btn wp-->
-                                </li>
-
-                                <li>
-                                    <strong>Dra. Florencia Burgués Olave<br>
-                                        Abogada<br>MAT. C.A.M.d.P. 000000</strong><br>
-                                    Laboral | Sucesiones | Familia | Civ. y Com.<br>
-                                    email@email.com<br>
-                                    <a href="https://api.whatsapp.com//send?phone=549$2235039636"
-                                        target="_blank">Contactar<i
-                                            class="bi bi-whatsapp"></i></a><br><!--ver mostrar btn wp-->
-                                </li>
-                                <li>
-                                    <strong>Dra. María Köstinger</strong><br>
-                                    Laboral | Divorcio | Sucesiones<br>
-                                    email@email.com<br>
-                                    <a href="https://api.whatsapp.com//send?phone=549$2235039636"
-                                        target="_blank">Contactar<i
-                                            class="bi bi-whatsapp"></i></a><br><!--ver mostrar btn wp-->
-                                </li>
-                                <li>
-                                    <strong>Dra. Verónica Utrera</strong><br>
-                                    Laboral | Divorcio | Sucesiones<br>
-                                    email@email.com<br>
-                                    <a href="https://api.whatsapp.com//send?phone=549$2235039636"
-                                        target="_blank">Contactar<i
-                                            class="bi bi-whatsapp"></i></a><br><!--ver mostrar btn wp-->
-                                </li>
-                                <li>
-                                    <strong>Dra. Mónica Di Giano</strong><br>
-                                    Laboral | Divorcio | Sucesiones<br>
-                                    email@email.com<br>
-                                    <a href="https://api.whatsapp.com//send?phone=549$2235039636"
-                                        target="_blank">Contactar<i
-                                            class="bi bi-whatsapp"></i></a><br><!--ver mostrar btn wp-->
-                                </li>
-                                <li>
-                                    <strong>Dra. Laura Rodriguez Osoro <br>Dr. Ignacio Rodriguez Osoro</strong><br>
-                                    Laboral | Divorcio | Sucesiones<br>
-                                    email@email.com<br>
-                                    <a href="https://api.whatsapp.com//send?phone=549$2235039636"
-                                        target="_blank">Contactar<i
-                                            class="bi bi-whatsapp"></i></a><br><!--ver mostrar btn wp-->
-                                </li>
-
-                                
-
-
-                                <li>
-                                    <strong>Dra. Raquel Sobarzo</strong><br>
-                                    Mediación<br>
-                                    email@email.com<br>
-                                    <a href="https://api.whatsapp.com//send?phone=549$2235039636"
-                                        target="_blank">Contactar
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a><br><!--ver mostrar btn wp-->
-                                </li>
-                                <li>
-                                    <strong>Dra. Valeria Grossi</strong><br>
-                                    Mediación<br>
-                                    email@email.com<br>
-                                    <a href="https://api.whatsapp.com//send?phone=549$2235039636"
-                                        target="_blank">Contactar<i
-                                            class="bi bi-whatsapp"></i></a><br><!--ver mostrar btn wp-->
                                 </li>
                             </ul>
                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -192,60 +106,7 @@
         </div>
     </div>
 </div>
-<!-- Portfolio item 2 modal popup-->
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-bs-dismiss="modal"><img src="../../../../assets/img/close-icon.svg"
-                    alt="Close modal" /></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="modal-body">
-                            <!-- Project details-->
-                            <h2 class="text-uppercase">Mediación</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-fluid d-block mx-auto" src="../../../../assets/img/mediacion2.avif"
-                                alt="..." />
-                            <p>Ofrecemos asesoramiento en cuestiones como impuestos, planificación financiera y
-                                contabilidad empresarial, monotributistas y autónomos.</p>
-                            <ul class="list-inline">
-                                <li>
-                                    <strong>Dra. Marcela Errasti</strong><br>
-                                    Mediación<br>
-                                    email@email.com<br>
-                                    <a href="https://api.whatsapp.com//send?phone=549$2235039636"
-                                        target="_blank">Contactar<i
-                                            class="bi bi-whatsapp"></i></a><br><!--ver mostrar btn wp-->
-                                </li>
-                                <li>
-                                    <strong>Dra. Raquel Sobarzo</strong><br>
-                                    Mediación<br>
-                                    email@email.com<br>
-                                    <a href="https://api.whatsapp.com//send?phone=549$2235039636"
-                                        target="_blank">Contactar<i
-                                            class="bi bi-whatsapp"></i></a><br><!--ver mostrar btn wp-->
-                                </li>
-                                <li>
-                                    <strong>Dra. Valeria Grossi</strong><br>
-                                    Mediación<br>
-                                    email@email.com<br>
-                                    <a href="https://api.whatsapp.com//send?phone=549$2235039636"
-                                        target="_blank">Contactar<i
-                                            class="bi bi-whatsapp"></i></a><br><!--ver mostrar btn wp-->
-                                </li>
-                            </ul>
-                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                <i class="fas fa-xmark me-1"></i>
-                                Cerrar
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- Portfolio item 3 modal popup-->
 <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -263,15 +124,24 @@
                                 alt="..." />
                             <p>Ofrecemos asesoramiento en cuestiones como impuestos, planificación financiera y
                                 contabilidad empresarial, monotributistas y autónomos.</p>
-                            <ul class="list-inline">
-                                <li>
-                                    <strong>CPN. Karina Greco</strong><br>
-                                    email@email.com<br>
-                                    <a href="https://api.whatsapp.com//send?phone=549$2235039636"
-                                        target="_blank">Contactar<i
-                                            class="bi bi-whatsapp"></i></a><br><!--ver mostrar btn wp-->
-                                </li>
-                            </ul>
+                                <ul class="list-inline" *ngFor="let contador of contadores">
+                                    <!--DESDE JSON-->
+                                    <li portfolio-item>
+                                        <h5><strong>{{contador.nombre}}</strong></h5>
+                                            <p class="profesionales__p"><strong>{{contador.profesion}}</strong></p>
+                                            <p class="profesionales__p"><strong>{{contador.matricula1}}</strong></p>
+                                            <p class="profesionales__p"><strong>{{contador.matricula2}}</strong></p>
+                                            <p class="profesionales__p"><strong>{{contador.matricula3}}</strong></p>
+                                            <p>
+                                                {{contador.descripcion}}<br>{{contador.especialidad}}<br>
+                                            </p>
+                                        <a
+                                            href="mailto:{{contador.mail}}?Subject=Email%20desde%20Estudio%20Web">{{contador.mail}}</a><br>
+                                        <a href="https://api.whatsapp.com//send?phone={{contador.cel}}" target="_blank">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                 <i class="fas fa-xmark me-1"></i>
                                 Cerrar
@@ -300,16 +170,24 @@
                                 alt="..." />
                             <p>Enfoque terapéutico integral y personalizado, adaptado a las necesidades únicas de cada
                                 paciente.</p>
-                            <ul class="list-inline">
-                                <li>
-                                    <strong>Lic. Julia Rodrigo</strong><br>
-                                    Psicología<br>
-                                    email@email.com<br>
-                                    <a href="https://api.whatsapp.com//send?phone=549$2235039636"
-                                        target="_blank">Contactar<i
-                                            class="bi bi-whatsapp"></i></a><br><!--ver mostrar btn wp-->
-                                </li>
-                            </ul>
+                                <ul class="list-inline" *ngFor="let psicologo of psicologos">
+                                    <!--DESDE JSON-->
+                                    <li portfolio-item>
+                                        <h5><strong>{{psicologo.nombre}}</strong></h5>
+                                            <p class="profesionales__p"><strong>{{psicologo.profesion}}</strong></p>
+                                            <p class="profesionales__p"><strong>{{psicologo.matricula1}}</strong></p>
+                                            <p class="profesionales__p"><strong>{{psicologo.matricula2}}</strong></p>
+                                            <p class="profesionales__p"><strong>{{psicologo.matricula3}}</strong></p>
+                                            <p>
+                                                {{psicologo.descripcion}}<br>{{psicologo.especialidad}}<br>
+                                            </p>
+                                        <a
+                                            href="mailto:{{psicologo.mail}}?Subject=Email%20desde%20Estudio%20Web">{{psicologo.mail}}</a><br>
+                                        <a href="https://api.whatsapp.com//send?phone={{psicologo.cel}}" target="_blank">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                 <i class="fas fa-xmark me-1"></i>
                                 Cerrar

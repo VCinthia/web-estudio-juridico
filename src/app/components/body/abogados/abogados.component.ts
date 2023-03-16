@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import list from '../../../../assets/json/list.json';
+
 
 @Component({
   selector: 'app-abogados',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./abogados.component.css']
 })
 export class AbogadosComponent implements OnInit {
+  abogados: any[] = [];
+  contadores: any[] = [];
+  psicologos: any[] = [];
 
-  constructor() { }
+  constructor() {
+  }
 
-  ngOnInit(): void {
+  ngOnInit()/* : void */ {
+      this.abogados = list.abogados;
+      this.contadores = list.contadores;
+      this.psicologos = list.psicologos;
   }
 
 }

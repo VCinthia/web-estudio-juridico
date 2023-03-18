@@ -1,0 +1,9 @@
+{
+    "/api/*": {
+      "target": "https://formsubmit.co",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }
+  

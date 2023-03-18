@@ -152,6 +152,6 @@
     "contacto" :{
         "$id" : 0,
         "nombre" : "Contacto Estudio",
-        "mail" : "estudioerrasti.contacto@gmail.com"
+        "mail" : "votacinthia@gmail.com"
     }
 }

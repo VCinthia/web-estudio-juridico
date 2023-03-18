@@ -21,7 +21,8 @@ import { MatFormFieldModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { CorsInterceptor } from './service/cors.interceptor';
 
 @NgModule({
   declarations: [
@@ -40,16 +41,22 @@ import { MatSelectModule } from '@angular/material/select';
     WebComponent
   ],
   imports: [
-    BrowserModule,    
+    BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
     MatButtonModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: CorsInterceptor,
+    multi: true
+  }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

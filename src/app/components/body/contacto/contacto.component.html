@@ -6,13 +6,13 @@
             <h3 class="section-subheading text-muted">Para incorporarse al estudio o comunicarse.</h3>
         </div>
         <!--saco de la etiqueta form : data-sb-form-api-token="API_TOKEN" -->
-        <form [formGroup]="contactForm" id="contactForm" class="form-group" >
+        <form #userPost="ngForm" [formGroup]="contactForm" id="contactForm" class="form-group" ><!-- action="https://formsubmit.co/el/ceduxo" method="POST" -->
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6">
                     <div class="form-group">
                         <!-- Name input-->
 
-                        <input class="form-control" id="name" type="text" placeholder="Nombre *" formControlName="nombre"/>
+                        <input class="form-control" id="name" type="text" placeholder="Nombre *" formControlName="nombre" name="Nombre"/>
                         
                         <small *ngIf="contactForm?.get('nombre')?.invalid && contactForm?.get('nombre')?.touched" class="section-subheading text-muted alert">
                             El nombre es requerido
@@ -22,7 +22,7 @@
                     <div class="form-group">
                         <!-- Email address input-->
                         <input class="form-control" id="email" type="email" placeholder="Email *"
-                             formControlName="email"/>
+                             formControlName="email" name="Email"/>
                              
                              <small *ngIf="contactForm?.get('email')?.invalid && contactForm?.get('email')?.touched" class="section-subheading text-muted alert">
                                  El Email es requerido
@@ -32,7 +32,7 @@
                     <div class="form-group mb-md-0">
                         <!-- Phone number input-->
                         <input class="form-control" id="phone" type="tel" placeholder="Teléfono *"
-                             formControlName="telefono"/>
+                             formControlName="telefono" name="Telefono"/>
                              <small *ngIf="contactForm?.get('telefono')?.invalid && contactForm?.get('telefono')?.touched" class="section-subheading text-muted alert">
                                 El Telefono es requerido
                             </small>
@@ -42,7 +42,7 @@
                     <div class="form-group form-group-textarea mb-md-0">
                         <!-- Message input-->
                         <textarea class="form-control" id="message" placeholder="Mensaje *"
-                             formControlName="mensaje"></textarea>
+                             formControlName="mensaje" name="Mensaje"></textarea>
                              <small *ngIf="contactForm?.get('mensaje')?.invalid && contactForm?.get('mensaje')?.touched" class="section-subheading text-muted alert">
                                 Ingrese el Mensaje.
                             </small>
@@ -67,6 +67,8 @@
                 </button>
                 <p *ngIf="isSubmit" class="section-subheading text-muted alert">{{ submitMessage }}</p>
             </div>
+            <!-- <input type="hidden" name="_next" value="http://localhost:4200"> -->
+            <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
 </section>

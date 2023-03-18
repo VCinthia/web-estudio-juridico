@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import list from '../../../../assets/json/list.json';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
@@ -23,7 +23,7 @@ export class ContactoComponent implements OnInit {
   mensaje: string = ''; */
 
 
-  constructor(private formBuilder : FormBuilder) { }
+  constructor(private formBuilder : FormBuilder, private http : HttpClient) { }
 
   ngOnInit(){
     /* this.contactoEmail = list.abogados[0].mail;
@@ -36,26 +36,35 @@ export class ContactoComponent implements OnInit {
     });
   }
 
-  sendEmail() {
-    /* const emailData = {
-      nombre: this.nombre,
-      mail: this.mail,
-      telefono: this.telefono,
-      mensaje: this.mensaje,
-    };
-
-    this.http.post('/send-email', emailData).subscribe(response => {
-      console.log(response);
-    }); */
-  }
-
-  submitData( value : any ){
+  submitData(value: any) {
     console.log(value);
     this.isSubmit = true;
-    this.submitMessage = 'Mensaje enviado.';
-    setTimeout(()=>{
-      this.isSubmit = false;
-    },4000);
+  
+    /* const httpOptions = {
+      headers: new HttpHeaders({
+        
+        'Content-Type': 'application/json'
+      })
+    }; */
+    
+    const url = 'https://formsubmit.co/el/ceduxo'
+    this.http.post(url, value/* , httpOptions */).subscribe(
+      (response) => {
+        console.log(response);
+        this.submitMessage = 'Mensaje enviado.';
+        setTimeout(() => {
+          this.isSubmit = false;
+        }, 4000);
+      },
+      (error) => {
+        console.log(error);
+        this.submitMessage = 'Error al enviar mensaje.';
+        setTimeout(() => {
+          this.isSubmit = false;
+        }, 4000);
+      }
+    );
   }
+  
 
 }

@@ -40,15 +40,20 @@ export class ContactoComponent implements OnInit {
     console.log(value);
     this.isSubmit = true;
   
-    /* const httpOptions = {
-      headers: new HttpHeaders({
-        
-        'Content-Type': 'application/json'
+    const httpOptions = {
+      method: "POST",
+      headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+          value
       })
-    }; */
+    };
+    
     
     const url = 'https://formsubmit.co/el/ceduxo'
-    this.http.post(url, value/* , httpOptions */).subscribe(
+    this.http.post(url, value, httpOptions).subscribe(
       (response) => {
         console.log(response);
         this.submitMessage = 'Mensaje enviado.';

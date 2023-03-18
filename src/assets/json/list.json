@@ -148,5 +148,10 @@
             "mail": "email@email.com",
             "cel": "5492235257320" 
         }
-    ]
+    ],
+    "contacto" :{
+        "$id" : 0,
+        "nombre" : "Contacto Estudio",
+        "mail" : "estudioerrasti.contacto@gmail.com"
+    }
 }

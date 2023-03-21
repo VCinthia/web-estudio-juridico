@@ -49,7 +49,8 @@ import { CorsInterceptor } from './service/cors.interceptor';
     MatButtonModule,
     MatInputModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

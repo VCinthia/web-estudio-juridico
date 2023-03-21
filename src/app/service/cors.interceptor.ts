@@ -8,7 +8,8 @@ export class CorsInterceptor implements HttpInterceptor {
     request = request.clone({
       setHeaders: {
         'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'Content-Type'
+        'Access-Control-Allow-Headers': 'Content-Type',
+        "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
       }
     });
     return next.handle(request);

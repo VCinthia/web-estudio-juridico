@@ -13,18 +13,6 @@
             "cel": "5492235352494"
         },
         {
-            "id": 2,
-            "nombre": "Dra. Florencia Burgués Olave",
-            "profesion": "Abogada",
-            "matricula1": "Mat. Prov. C.A.M.d.P. T°AAA F°000",
-            "matricula2": "",
-            "matricula3": "",
-            "descripcion": " Laboral | Sucesiones | Familia | Civ. y Com.",
-            "especialidad": "Especialidad ",
-            "mail": "flor_burgues@hotmail.com",
-            "cel": "5492236344053"
-        },
-        {
             "id": 3,
             "nombre": "Dr. Christian Damian Varanini",
             "profesion": "Abogado",
@@ -61,64 +49,16 @@
             "cel": "5492235864903"
         },
         {
-            "id": 6,
-            "nombre": "Dra. Laura Rodriguez Osoro",
-            "profesion": "Abogada",
-            "matricula1": "Mat. Prov. C.A.M.d.P. T°AAA F°000",
-            "matricula2": "",
-            "matricula3": "",
-            "descripcion": " Laboral | Sucesiones | Familia | Civ. y Com.",
-            "especialidad": "Especialidad ",
-            "mail": "estudiiorodriguezosoro@gmail.com",
-            "cel": "5492234387991"
-        },
-        {
-            "id": 7,
-            "nombre": "Dr. Ignacio Rodriguez Osoro",
-            "profesion": "Abogado",
-            "matricula1": "Mat. Prov. C.A.M.d.P. T°AAA F°000",
-            "matricula2": "",
-            "matricula3": "",
-            "descripcion": " Laboral | Sucesiones | Familia | Civ. y Com.",
-            "especialidad": "Especialidad ",
-            "mail": "estudiiorodriguezosoro@gmail.com",
-            "cel": "5492236354319"
-        },
-        {
             "id": 8,
             "nombre": "Dra. Raquel Sobarzo",
             "profesion": "Abogada Mediadora",
             "matricula1": "Mat. Prov. C.A.M.d.P. T°AAA F°000",
             "matricula2": "",
-            "matricula3": "Mat. Med. Prov. MP220",
+            "matricula3": "Mat. Med. Prov. MP0000",
             "descripcion": " Mediación | Laboral | Sucesiones | Familia | Civ. y Com.",
             "especialidad": "Especialidad ",
             "mail": "mariaraquelsobarzo@live.com.ar",
             "cel": "5492235171703"
-        },
-        {
-            "id": 9,
-            "nombre": "Dra. Valeria Grossi",
-            "profesion": "Abogada Mediadora",
-            "matricula1": "Mat. Prov. C.A.M.d.P. T°AAA F°000",
-            "matricula2": "",
-            "matricula3": "Mat. Med. Prov. MP220",
-            "descripcion": " Mediación | Laboral | Sucesiones | Familia | Civ. y Com.",
-            "especialidad": "Especialidad ",
-            "mail": "valegrossi77@yahoo.com.ar",
-            "cel": "5492236149359"
-        },
-        {
-            "id": 10,
-            "nombre": "Dra. María Köstinger",
-            "profesion": "Abogada",
-            "matricula1": "Mat. Prov. C.A.M.d.P. T°AAA F°000",
-            "matricula2": "",
-            "matricula3": "",
-            "descripcion": "Laboral | Sucesiones | Familia | Civ. y Com.",
-            "especialidad": "Especialidad ",
-            "mail": "email@email.com",
-            "cel": "5492236038909"
         }
     ],
     "contadores" : [
@@ -129,8 +69,8 @@
             "matricula1": "Mat. ...... ",
             "matricula2": "",
             "matricula3": "",
-            "descripcion": "Descripción",
-            "especialidad": "Especialidad",
+            "descripcion": "Descripción ",
+            "especialidad": "Especialidad ",
             "mail": "cpnkarinagreco@hotmail.com",
             "cel": "5492235459068"
         }
@@ -143,8 +83,8 @@
             "matricula1": "Mat. .......",
             "matricula2": "",
             "matricula3": "",
-            "descripcion": "Descripción",
-            "especialidad": "Especialidad",
+            "descripcion": "Descripción ",
+            "especialidad": "Especialidad ",
             "mail": "email@email.com",
             "cel": "5492235257320" 
         }
@@ -152,6 +92,6 @@
     "contacto" :{
         "$id" : 0,
         "nombre" : "Contacto Estudio",
-        "mail" : "votacinthia@gmail.com"
+        "mail" : "estudioerrasti.contacto@gmail.com"
     }
 }

@@ -79,6 +79,7 @@ export class ContactoComponent implements OnInit {
         setTimeout(() => {
           this.isSubmit = false;
         }, 4000);
+        this.resetForm();
       }, (error) => {
         console.log(error.text);
         this.submitMessage = 'Error al enviar mensaje.';
@@ -86,6 +87,10 @@ export class ContactoComponent implements OnInit {
           this.isSubmit = false;
         }, 4000);
       });
+  }
+
+  private resetForm() {
+    this.contactForm.reset();
   }
 
 }

@@ -20,5 +20,4 @@ export class AbogadosComponent implements OnInit {
       this.contadores = list.contadores;
       this.psicologos = list.psicologos;
   }
-
 }

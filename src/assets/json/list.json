@@ -16,37 +16,13 @@
             "id": 3,
             "nombre": "Dr. Christian Damian Varanini",
             "profesion": "Abogado",
-            "matricula1": "Mat. Prov. C.A.M.d.P. T°AAA F°000",
+            "matricula1": "Mat. Prov. C.A.M.d.P. T°XIII F°349",
             "matricula2": "",
             "matricula3": "",
             "descripcion": " Laboral | Sucesiones | Familia | Civ. y Com.",
-            "especialidad": "Especialidad ",
+            "especialidad": "Especialidad Derecho Laboral y Familiar. Divorcio, Regimen de Comunicación y Alimentos.",
             "mail": "christianvaranini@hotmail.com",
             "cel": "5492235462905"
-        },
-        {
-            "id": 4,
-            "nombre": "Dra. Verónica Utrera",
-            "profesion": "Abogada",
-            "matricula1": "Mat. Prov. C.A.M.d.P. T°AAA F°000",
-            "matricula2": "",
-            "matricula3": "",
-            "descripcion": " Laboral | Sucesiones | Familia | Civ. y Com.",
-            "especialidad": "Especialidad ",
-            "mail": "veronicautrera@hotmail.com",
-            "cel": "5492236889581"
-        },
-        {
-            "id": 5,
-            "nombre": "Dra. Mónica Di Giano",
-            "profesion": "Abogada",
-            "matricula1": "Mat. Prov. C.A.M.d.P. T°AAA F°000",
-            "matricula2": "",
-            "matricula3": "",
-            "descripcion": " Laboral | Sucesiones | Familia | Civ. y Com.",
-            "especialidad": "Especialidad ",
-            "mail": "email@email.com",
-            "cel": "5492235864903"
         },
         {
             "id": 8,
@@ -64,15 +40,15 @@
     "contadores" : [
         {
             "id": 1,
-            "nombre": "CPN. Karina Greco",
+            "nombre": "",
             "profesion": "",
-            "matricula1": "Mat. ...... ",
+            "matricula1": "",
             "matricula2": "",
             "matricula3": "",
-            "descripcion": "Descripción ",
-            "especialidad": "Especialidad ",
-            "mail": "cpnkarinagreco@hotmail.com",
-            "cel": "5492235459068"
+            "descripcion": " ",
+            "especialidad": " ",
+            "mail": "",
+            "cel": ""
         }
     ],
     "psicologos" : [
